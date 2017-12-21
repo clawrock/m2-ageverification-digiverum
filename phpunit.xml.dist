@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit bootstrap="./vendor/autoload.php">
+    <testsuites>
+        <testsuite name="ClawRock_Digiverum module">
+            <directory>Test/Unit</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">Helper</directory>
+            <directory suffix=".php">Model</directory>
+        </whitelist>
+    </filter>
+</phpunit>

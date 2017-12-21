@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <clawrock_av>
+            <models>
+                <digiverum>
+                    <age_verify>ClawRock\Digiverum\Model\AgeVerify\Method</age_verify>
+                </digiverum>
+            </models>
+        </clawrock_av>
+        <clawrock_digiverum>
+            <general>
+                <url>http://ageverify.digiverum.com/Verify</url>
+                <url_qa>http://qasiteageverify.digiverum.com/Verify</url_qa>
+                <ip>127.0.0.1</ip>
+                <env>QA</env>
+            </general>
+        </clawrock_digiverum>
+    </default>
+</config>
